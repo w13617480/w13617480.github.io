@@ -33,24 +33,7 @@ body a:hover{
 	-o-background-size:cover;
 	-ms-background-size:cover;
 }
-.banner-1{
-	background:url(../images/banner-2.jpg) no-repeat;
-	min-height:670px;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
-}
-.banner-2{
-	background:url(../images/banner-3.jpg) no-repeat center;
-	min-height:670px;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
-}
+
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*------------------ Slider Part starts Here----------*/
 .callbacks_container {
