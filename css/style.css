@@ -24,8 +24,8 @@ body a:hover{
 	text-decoration:none;
 }
 /*--banner-starts--*/
-.banner{
-	background:url(../images/banner-1.jpg) no-repeat center;
+.banner-1{
+	background:url(../images/banner-1.jpg) no-repeat;
 	min-height:670px;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -33,7 +33,25 @@ body a:hover{
 	-o-background-size:cover;
 	-ms-background-size:cover;
 }
-
+.banner-2{
+	background:url(../images/banner-2.jpg) no-repeat center;
+	min-height:670px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.banner-3{
+	background:url(../images/banner-3.jpg) no-repeat center;
+	min-height:670px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+ 
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*------------------ Slider Part starts Here----------*/
 .callbacks_container {
@@ -972,7 +990,7 @@ h4.media-heading {
 .project-eff:hover span.rollover1 {
 	background: url(../images/arrow.png) center no-repeat rgba(234, 76, 137, 0.7);
 	cursor: pointer;
-	height: 213px;
+	height: 167px;
 	width: 255px;
 	display: block;
 	position: absolute;
@@ -1001,7 +1019,7 @@ h4.media-heading {
 .callbacks_nav.next {
   right: 85.8%;
 }
-.banner-2,.banner,.banner-1{
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6{
 	min-height: 650px;
 }
 .banner-top {
@@ -1031,7 +1049,7 @@ h4.media-heading {
 .contact {
   padding: 5em 0px;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6 {
 	min-height: 630px;
 }
 .banner-top {
@@ -1057,6 +1075,9 @@ h4.media-heading {
   padding: 2px 22px 15px 19px;
 }
 }
+
+
+
 @media(max-width:1280px){
 .logo a img {
 	width: 16.3%;
@@ -1070,7 +1091,7 @@ h4.media-heading {
 .comments {
   margin-top: 6%;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6{
   min-height: 600px;
 }
 .contact-bottom {
@@ -1129,7 +1150,7 @@ h4.media-heading {
   line-height: 1.5em;
 }
 .project-eff:hover span.rollover1 {
-  height: 171px;
+  height: 137px;
   width: 206px;
 }
 .blog-one a h4 {
@@ -1208,7 +1229,7 @@ h4.media-heading {
 	padding: 10px 18px;
 	width: 20.8%;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6 {
 	min-height: 510px;
 }
 .banner-top {
@@ -1312,8 +1333,9 @@ h4.media-heading {
   padding: 0 6px;
 }
 .project-eff:hover span.rollover1 {
-  height: 140px;
+  height: 110px;
   width: 168px;
+  border-color: blue;
 }
 .port-one {
   margin-top: 2%;
@@ -1388,7 +1410,7 @@ h4.media-heading {
   padding: 9px 11px;
   width: 22%;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6 {
 	min-height: 390px;
 }
 .banner-text {
@@ -1548,7 +1570,7 @@ h4.media-heading {
   padding: 1em 0px 2.5em 0px;
 }
 .project-eff:hover span.rollover1 {
-	height: 113px;
+	height: 90px;
 	width: 137px;
 }
 .contact-top h3 {
@@ -1599,7 +1621,7 @@ h4.media-heading {
 	font-size: 13px;
 	width: 24.4%;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6 {
   min-height: 320px;
 }
 .banner-text {
@@ -1790,7 +1812,7 @@ h4.media-heading {
 	width: 27.8%;
 	padding: 6px 10px;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6 {
 	min-height: 239px;
 }
 .callbacks_nav {
@@ -1881,7 +1903,7 @@ h4.media-heading {
   background-size: 100%;
 }
 .project-eff:hover span.rollover1 {
-  height: 83px;
+  height: 67px;
   width: 102px;
 }
 .blog {
@@ -1987,7 +2009,7 @@ h4.media-heading {
 .t-bottom h5 {
   font-size: 15px;
 }
-.banner-2, .banner, .banner-1 {
+.banner-1,.banner-2,.banner-3,.banner-4,.banner-5,.banner-6 {
   min-height: 175px;
 }
 .t-bottom p {
@@ -2108,7 +2130,7 @@ span.menu {
   width: 50%;
 }
 .project-eff:hover span.rollover1 {
-  height: 108px;
+  height: 85px;
   width: 129px;
 }
 .port-one {
