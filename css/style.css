@@ -51,6 +51,33 @@ body a:hover{
 	-o-background-size:cover;
 	-ms-background-size:cover;
 }
+.banner-4{
+	background:url(../images/banner-4.jpg) no-repeat center;
+	min-height:670px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.banner-5{
+	background:url(../images/banner-5.jpg) no-repeat center;
+	min-height:670px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.banner-6{
+	background:url(../images/banner-6.jpg) no-repeat center;
+	min-height:670px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
  
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*------------------ Slider Part starts Here----------*/
