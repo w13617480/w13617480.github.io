@@ -32,6 +32,7 @@ var jiaoFang = {
 		{ img: 'IMG_4193.JPG', desc: '阳台'},
 		{ img: 'IMG_4196.JPG', desc: '阳台'},
 		{ img: 'IMG_4171.JPG', desc: '餐厅'}, 
-		{ img: 'IMG_4178.JPG', desc: '餐厅'}
+		{ img: 'IMG_4178.JPG', desc: '餐厅'},
+		{ img: 'IMG_4245.JPG', desc: '餐厅'}
 	]
 }
