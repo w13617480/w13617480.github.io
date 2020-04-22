@@ -2,7 +2,7 @@
 var gaiSD = {
 	title: '改水电',
 	path: 'https://w13617480.gitee.io/home/templates/img/2.gaisd/',
-	date: "",
+	date: "20200422",
 	imgs: [
 		{img: 'IMG_4246.JPG', desc: '开工'}
 	]
