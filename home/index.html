@@ -208,12 +208,20 @@
                     return;
                 }
 
-                for (var i = 0; i < data.imgs.length; i++) {
-                    var pic = '<div class="col-6 col-sm-6 col-md-4 col-lg-3" > '
-                            + '    <img class="imgclass" src="' + data.path + data.imgs[i].img + '"> '
-                            + '    <p>' + data.imgs[i].desc + '</p>'
+                if ( data.imgs.length === 1){
+                    var pic = '<div class="col-12 col-sm-12 col-md-4 col-lg-3" > '
+                            + '    <img class="imgclass" src="' + data.path + data.imgs[0].img + '"> '
+                            + '    <p>' + data.imgs[0].desc + '</p>'
                             + '</div>';
                     $(blockName).append(pic);
+                } else {
+                    for (var i = 0; i < data.imgs.length; i++) {
+                        var pic = '<div class="col-6 col-sm-6 col-md-4 col-lg-3" > '
+                                + '    <img class="imgclass" src="' + data.path + data.imgs[i].img + '"> '
+                                + '    <p>' + data.imgs[i].desc + '</p>'
+                                + '</div>';
+                        $(blockName).append(pic);
+                    }
                 }
             }
 
