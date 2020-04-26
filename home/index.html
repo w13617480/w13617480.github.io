@@ -76,8 +76,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0" style="color: white;">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rowGaiSD">改水电</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rowJiaoFang">交房</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#row0">改水电</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#row1">开工</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#row2">交房</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">视频</a></li>
                     </ul>
                 </div>
@@ -128,18 +129,19 @@
         </div>
 
         
-        
-        
-        <!-- Portfolio-->
-        <section id="portfolio">
+        <section id="secImg">
             <div class="container" > 
 
                 <div id="rowGaiSD" class="row block text-center" >
                 </div>
+                <div id="rowKaiGong" class="row block text-center" >
+                </div>
                 <div id="rowJiaoFang" class="row block text-center" >
                 </div>
             </div>
+        </section>
 
+        <section>
             <div id="video" class="container">
                 <div class="row text-center">
                     <div class="col-12 title"> 佳境珑原 </div>
@@ -182,47 +184,70 @@
         <!-- Core theme JS-->
         <script src="https://w13617480.gitee.io/home/js/scripts.js"></script>
 
-        <script src="https://w13617480.gitee.io/home/templates/img/data.js"></script>
+        <script src="https://w13617480.gitee.io/home/templates/img/data.js?v1.4"></script>
+        <!-- <script src="./templates/img/data.js?v1.2"></script> -->
 
         <script>
             $(function(){
-                creBlock('#rowGaiSD', gaiSD);	
-                creBlock('#rowJiaoFang', jiaoFang);	
+                
+                creBlock(); 
+                // creBlock('#rowGaiSD', gaiSD);  
+                // creBlock('#rowKaiGong', kaiGong);	
+                // creBlock('#rowJiaoFang', jiaoFang);	
 
                 funcReadImgInfo();
 
                             
-                $(".nav-item").on('click', function(){
-                    $(this).addClass('active').siblings().removeClass('active');
-                })	
+                // $(".nav-item").on('click', function(){
+                //     $(this).addClass('active').siblings().removeClass('active');
+                // })	
             })
 
-            function creBlock(blockName, data){
+            function creBlock(){
 
-                $(blockName).empty();
+                $("#secImg .container").empty();
+                // $("#navbarResponsive ul").empty();
 
-                var title = '<div class="col-12 title"> ' + data.date + ' ' + data.title + '</div>';
-                $(blockName).append(title);
+                for (j=0; j < imgData.length; j++) {
 
-                if ( data.date === '') {
-                    return;
-                }
+                    var data = imgData[j];
+                
+                    var rowid = "row" + j;
+                    var row = '<div id="' + rowid + '" class="row block text-center" ></div>';
+                    $("#secImg .container").append(row);
 
-                if ( data.imgs.length === 1){
-                    var pic = '<div class="col-12 col-sm-12 col-md-4 col-lg-3" > '
-                            + '    <img class="imgclass" src="' + data.path + data.imgs[0].img + '"> '
-                            + '    <p>' + data.imgs[0].desc + '</p>'
-                            + '</div>';
-                    $(blockName).append(pic);
-                } else {
-                    for (var i = 0; i < data.imgs.length; i++) {
-                        var pic = '<div class="col-6 col-sm-6 col-md-4 col-lg-3" > '
-                                + '    <img class="imgclass" src="' + data.path + data.imgs[i].img + '"> '
-                                + '    <p>' + data.imgs[i].desc + '</p>'
+
+                    blockName = "#" + rowid;
+
+
+                    // var nav = '<li class="nav-item"><a class="nav-link js-scroll-trigger" href="'+ blockName +'">' + data.title + '</a></li>';
+                    // $("#navbarResponsive ul").append(nav);
+
+                    var title = '<div class="col-12 title"> ' + data.date + ' ' + data.title + '</div>';
+                    $(blockName).append(title);
+
+                    if ( data.date === '') {
+                        return;
+                    }
+
+                    if ( data.imgs.length === 1){
+                        var pic = '<div class="col-12 col-sm-12 col-md-4 col-lg-3" > '
+                                + '    <img class="imgclass" src="' + data.path + data.imgs[0].img + '"> '
+                                + '    <p>' + data.imgs[0].desc + '</p>'
                                 + '</div>';
                         $(blockName).append(pic);
+                    } else {
+                        for (var i = 0; i < data.imgs.length; i++) {
+                            var pic = '<div class="col-6 col-sm-6 col-md-4 col-lg-3" > '
+                                    + '    <img class="imgclass" src="' + data.path + data.imgs[i].img + '"> '
+                                    + '    <p>' + data.imgs[i].desc + '</p>'
+                                    + '</div>';
+                            $(blockName).append(pic);
+                        }
                     }
                 }
+
+                // $("#navbarResponsive ul").append('<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#video">视频</a></li>');
             }
 
             function funcReadImgInfo(){
