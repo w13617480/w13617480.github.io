@@ -53,7 +53,7 @@ function creimg(filename){
 			+ '				<div id="nivo-lightbox-demo">  '
 			+ '					<p>  '
 			+ '						<a href="' + filename + '" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  '
-			+ '							<span class="rollover1"> </span> '
+			+ '							<span class="rollover1x"> </span> '
 			+ '						</a>  '
 			+ '					</p> '
 			+ '				</div>      '
