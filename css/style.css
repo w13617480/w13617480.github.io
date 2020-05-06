@@ -1177,8 +1177,10 @@ h4.media-heading {
   line-height: 1.5em;
 }
 .project-eff:hover span.rollover1 {
-  height: 137px;
-  width: 206px;
+  /*height: 137px;*/
+  /*width: 206px;*/
+  height: 134px;
+  width: 205px;
 }
 .blog-one a h4 {
   font-size: 1em;
@@ -1360,8 +1362,10 @@ h4.media-heading {
   padding: 0 6px;
 }
 .project-eff:hover span.rollover1 {
-  height: 110px;
-  width: 168px;
+  /*height: 110px;*/
+  /*width: 168px;*/
+  height: 98px;
+  width: 150px;
   border-color: blue;
 }
 .port-one {
@@ -1597,8 +1601,10 @@ h4.media-heading {
   padding: 1em 0px 2.5em 0px;
 }
 .project-eff:hover span.rollover1 {
-	height: 90px;
-	width: 137px;
+	/*height: 90px;*/
+	/*width: 137px;*/
+	height: 80px;
+	width: 123px;
 }
 .contact-top h3 {
   font-size: 1.4em;
@@ -2157,8 +2163,10 @@ span.menu {
   width: 50%;
 }
 .project-eff:hover span.rollover1 {
-  height: 85px;
-  width: 129px;
+  /*height: 85px;*/
+  /*width: 129px;*/
+  height: 89px;
+  width: 137px;
 }
 .port-one {
   margin-top: 0%;
